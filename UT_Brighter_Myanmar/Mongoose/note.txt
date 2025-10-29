@@ -1,0 +1,11 @@
+Customer = Company
+
+Customer = Project Manager
+
+Project Manager - Senior Developer 
+
+Senior DB Handling Methods -> Expose = Junior Developer
+
+Senior Developer -> DB -> functionalities -> export methods 
+
+Junior Developer
