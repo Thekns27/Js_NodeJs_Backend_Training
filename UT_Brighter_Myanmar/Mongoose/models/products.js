@@ -1,12 +1,12 @@
-const mongoose = require("mongoose");
-const { create } = require("./user");
+const mongoose = require('mongoose');
+const { create } = require('/Users');
 const { Schema } = mongoose;
 
 const ProductSchema = new Schema({
   name: { type: String, required: true },
   price: { type: Number, require: true },
-  user: { type: Schema.Types.ObjectId, required: true, ref: "users" },
-  category: { type: Schema.types.ObjectId, required: true, ref: "categories" },
+  user: { type: Schema.Types.ObjectId, required: true, ref:'users' },
+  category: { type: Schema.types.ObjectId, required: true, ref:'categories' },
   size: { type: String, enum: ["S", "M", "X", "XL", "XXL"], default: "M" },
   colors: [String],
   discount: { type: Schema.Types.Double, default: 0.0 },
